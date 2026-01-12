@@ -500,6 +500,44 @@ nav {
     border-bottom: none;
 }
 
+/* --- CERTIFICATIONS --- */
+.certif-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.certif-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.certif-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.certif-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    /* Pushes the button to the bottom if content varies */
+}
+
+.certif-card .btn-secondary {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* --- VEILLE --- */
 .veille-container {
     padding: 40px;
